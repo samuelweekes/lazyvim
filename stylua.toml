@@ -1,20 +1,5 @@
-indent_type = "Spaces"  # Can be "Tabs" or "Spaces"
-indent_width = 2        # Number of spaces or tabs to use for indentation
-
-# Line width settings
-column_width = 80       # Maximum line width
-
-# Quote style
-quote_style = "AutoPreferDouble"  # Can be "AutoPreferDouble", "AutoPreferSingle", "AlwaysDouble", or "AlwaysSingle"
-
-# Call parenthesis settings
-call_parentheses = "None"  # Can be "None" or "Always"
-
-# Table separator settings
-table_separator_style = "Comma"  # Can be "Comma" or "Semicolon"
-
-# Other settings
-no_call_parentheses = false  # Whether to omit parentheses for function calls with no arguments
-align_args = false           # Whether to align function arguments
-align_parameter = false      # Whether to align function parameters
-align_table_field = false    # Whether to align table fields
+indent_type = "Spaces"
+indent_width = 2
+column_width = 80
+quote_style = "AutoPreferDouble"
+call_parentheses = "None"
