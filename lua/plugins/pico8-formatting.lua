@@ -32,10 +32,15 @@ return {
               formatted_code="$code"
             fi
 
-            # Output everything with blank lines
+            # Output everything with conditional blank line
             echo "$header"
             echo "__lua__"
-            echo ""  # Blank line after __lua__
+            
+            # Only add blank line if code doesn't start with one
+            if [ -n "$formatted_code" ] && [ "$(echo "$formatted_code" | head -n1)" != "" ]; then
+              echo ""  # Blank line after __lua__ only if needed
+            fi
+            
             echo "$formatted_code"
             if [ -n "$data" ]; then
               echo ""  # Blank line before data sections
